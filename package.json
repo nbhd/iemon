@@ -1,0 +1,30 @@
+{
+  "name": "iemon",
+  "version": "0.0.0",
+  "description": "iemon",
+  "keywords": "iemon",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "bin": {},
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "dependencies": {
+    "grunt": "0.4.5"
+  },
+  "main": "",
+  "engines": {
+    "node": ">=0.8.26"
+  },
+  "licenses": [],
+  "devDependencies": {
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "webpack": "^1.4.13"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "iemon",
+  "version": "0.0.0",
+  "description": "iemon",
+  "keywords": [
+    "webgl"
+  ],
+  "authors": [
+    "nbhd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "threejs": "*",
+    "jquery": "~2.1.1"
+  }
+}
