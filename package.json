@@ -24,7 +24,8 @@
   "licenses": [],
   "devDependencies": {
     "grunt-contrib-copy": "^0.7.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "webpack": "^1.4.13"
+    "grunt-contrib-watch": "*",
+    "webpack": "^1.4.13",
+    "grunt-contrib-uglify": "^0.8.0"
   }
 }

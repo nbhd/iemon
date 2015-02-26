@@ -18,7 +18,7 @@ module.exports = function (grunt) {
                     entry: './s/index.js',
                     output: {
                         path: __dirname + '/release/',
-                        filename: 'bundle.js'
+                        filename: '[name].bundle.js'
                     }
                 }
             },
@@ -37,10 +37,10 @@ module.exports = function (grunt) {
 
             watch: {
                 scripts: {
-                    files: ['**/*.js', '**/*.html'],
-                    tasks: ['webpack', 'copy'],
+                    files: ['./s/*.js', './s/*.html'],
+                    tasks: ['webpack', 'copy', 'uglify'],
                     options: {
-                        spawn: false
+                        nospawn: true
                     }
                 }
             },
@@ -52,10 +52,20 @@ module.exports = function (grunt) {
                     src: '**/*.html',
                     dest: './release'
                 }
+            },
+
+            uglify: {
+                dist: {
+                    files: {
+                        './release/main.bundle.min.js': './release/main.bundle.js'
+                    }
+                }
             }
+
         });
 
         grunt.loadNpmTasks('grunt-webpack');
         grunt.loadNpmTasks('grunt-contrib-watch');
         grunt.loadNpmTasks('grunt-contrib-copy');
+        grunt.loadNpmTasks('grunt-contrib-uglify');
 };
